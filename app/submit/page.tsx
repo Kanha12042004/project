@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import StepOne from "../components/steps/StepOne";
-import StepTwo from "../components/steps/StepTwo";
-import StepThree from "../components/steps/StepThree";
+import StepOne from "../../components/steps/StepOne";
+import StepTwo from "../../components/steps/StepTwo";
+import StepThree from "../../components/steps/StepThree";
 
 export default function SubmitPage() {
   const [step, setStep] = useState(1);
@@ -24,8 +24,8 @@ export default function SubmitPage() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: "linear-gradient(135deg,#4facfe,#00f2fe)",
-        fontFamily: "Arial",
+        background: "linear-gradient(135deg, #4facfe, #00f2fe)",
+        fontFamily: "Arial, sans-serif",
       }}
     >
       <div
@@ -38,7 +38,13 @@ export default function SubmitPage() {
           textAlign: "center",
         }}
       >
-        <h1 style={{ fontSize: "30px", marginBottom: "20px" }}>
+        <h1
+          style={{
+            fontSize: "32px",
+            marginBottom: "25px",
+            color: "#333",
+          }}
+        >
           Request Form
         </h1>
 
